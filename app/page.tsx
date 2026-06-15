@@ -38,6 +38,11 @@ export default function Home() {
           link="/projects/labspec"
         />
 
+        <ProjectCard
+          title="Digital Worlds Education Games"
+          link="/projects/digital-worlds"
+        />
+
       </div>
 
     </main>
