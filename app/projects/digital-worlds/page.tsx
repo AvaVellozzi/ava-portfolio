@@ -181,7 +181,7 @@ export default function DigitalWorlds() {
             <div className="space-y-3 text-gray-700 leading-relaxed">
 
               <p>
-                Reached over <span className="font-medium">8 million users annually</span>
+                Reached over <span className="font-medium">8 million users annually </span>
                 across 25 states.
               </p>
 

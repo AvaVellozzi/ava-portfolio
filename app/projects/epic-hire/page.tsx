@@ -186,24 +186,30 @@ export default function EpicHire() {
 
         </section>
 
-        {/* IMAGE */}
+        {/* PROTOTYPE DECK */}
         <section className="mb-16">
 
-          <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
-            Prototype
-          </h2>
+        <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+            Prototype Deck
+        </h2>
 
-          <div className="border rounded-2xl overflow-hidden bg-gray-50">
+        <div className="border rounded-2xl overflow-hidden bg-gray-50">
 
-            <Image
-              src="/epic-hire.png"
-              alt="Epic Hire Vision Pro Prototype"
-              width={1200}
-              height={800}
-              className="w-full h-auto"
+            <iframe
+            src="/epic-hire-deck.pdf"
+            className="w-full h-[650px]"
             />
 
-          </div>
+        </div>
+
+        <a
+            href="/epic-hire-deck.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 text-sm text-blue-600 hover:underline"
+        >
+            Open full deck →
+        </a>
 
         </section>
 
