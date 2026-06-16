@@ -13,7 +13,7 @@ export default function Home() {
           </h1>
 
           <p className="text-xl text-gray-500 max-w-3xl mx-auto leading-relaxed">
-            Product Designer & Computer Scientist focused on designing complex systems that transform technical workflows into clear, intuitive experiences.
+            Computer Scientist & Product Designer focused on designing complex systems that transform technical workflows into clear, intuitive experiences.
           </p>
 
           {/* CTA ROW */}
@@ -40,18 +40,18 @@ export default function Home() {
         <section className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <ProjectCard
             title="Microsoft Compliance Dashboard"
-            description="Reduced compliance review time by 50% across 2,000+ regulatory requirements."
+            description="Streamlined regulatory compliance workflows by centralizing 2,000+ requirements, reducing review time by 50%."
             link="/projects/compliance"
           />
 
           <ProjectCard
-            title="Teams Diagnostic App"
+            title="Microsoft Teams Diagnostic App"
             description="Enabled 10,000+ developers to debug 50+ APIs through a real-time diagnostic workflow."
             link="/projects/teams"
           />
 
           <ProjectCard
-            title="Epic Hire — Vision Pro Recruiting"
+            title="Epic Hire — Apple Vision Pro Recruiting"
             description="Designed spatial recruiting workflows improving recruiter efficiency by 45%."
             link="/projects/epic-hire"
           />
