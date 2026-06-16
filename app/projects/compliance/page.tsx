@@ -2,24 +2,28 @@ import Image from "next/image";
 
 export default function Compliance() {
   return (
-    <main className="min-h-screen bg-white text-gray-900">
+    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 text-gray-900 relative overflow-hidden">
+      {/* Animated gradient blobs */}
+      <div className="absolute top-10 right-10 w-80 h-80 bg-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-pulse" />
+      <div className="absolute bottom-20 left-20 w-80 h-80 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-pulse" />
+      <div className="absolute top-1/2 left-1/3 w-80 h-80 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-10" />
 
-      <div className="max-w-4xl mx-auto px-6 py-20">
+      <div className="max-w-4xl mx-auto px-8 py-24 relative z-10">
 
         {/* HEADER */}
-        <header className="mb-16">
+        <header className="mb-20">
 
-          <h1 className="text-5xl font-semibold tracking-tight mb-4">
+          <h1 className="text-6xl font-bold tracking-tighter mb-4 bg-gradient-to-r from-slate-900 to-indigo-700 bg-clip-text text-transparent">
             Microsoft Compliance Dashboard
           </h1>
 
-          <p className="text-xl text-gray-600 leading-relaxed">
-            A centralized regulatory compliance system designed to reduce
-            review time, improve visibility across 2,000+ requirements,
-            and help engineering teams ship compliant software faster.
+          <p className="text-lg text-slate-600 leading-relaxed">
+            A centralized compliance platform built from scratch to manage
+            regulatory requirements, streamline review workflows, and help
+            engineering teams ship compliant software faster.
           </p>
 
-          <div className="mt-6 text-sm text-gray-500">
+          <div className="mt-6 text-sm text-slate-500">
             React • TypeScript • FluentUI • SQL • C#
           </div>
 
@@ -28,15 +32,17 @@ export default function Compliance() {
         {/* OVERVIEW */}
         <section className="mb-16">
 
-          <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
             Overview
           </h2>
 
-          <p className="text-gray-700 leading-relaxed">
-            Microsoft products must comply with thousands of evolving regulatory
-            requirements across regions, security standards, and internal policies.
-            However, compliance tracking was fragmented across teams, documents,
-            and manual review processes.
+          <p className="text-slate-700 leading-relaxed">
+            Microsoft products must comply with thousands of regulatory and
+            security requirements across regions, industries, and internal
+            standards. The existing process relied heavily on spreadsheets,
+            documents, and manual reviews, making it difficult for teams to
+            understand requirements, track implementation progress, and
+            maintain compliance at scale.
           </p>
 
         </section>
@@ -44,24 +50,26 @@ export default function Compliance() {
         {/* PROBLEM */}
         <section className="mb-16">
 
-          <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
             Problem
           </h2>
 
-          <div className="space-y-4 text-gray-700 leading-relaxed">
+          <div className="space-y-4 text-slate-700 leading-relaxed">
 
             <p>
-              Compliance information was distributed across spreadsheets, documents,
-              and disconnected tracking systems.
+              Compliance requirements, known as controls, were managed through
+              a fragmented collection of spreadsheets and documents.
             </p>
 
             <p>
-              Engineers struggled to understand which requirements applied to their
-              product areas, leading to delays and repeated manual reviews.
+              Teams struggled to understand which controls applied to their
+              products, how those controls were being implemented, and where
+              reviews were blocked or incomplete.
             </p>
 
             <p>
-              There was no centralized system to track compliance coverage or identify gaps.
+              The process lacked a centralized workflow for creating,
+              updating, reviewing, and tracking compliance requirements.
             </p>
 
           </div>
@@ -71,14 +79,15 @@ export default function Compliance() {
         {/* GOAL */}
         <section className="mb-16">
 
-          <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
             Goal
           </h2>
 
-          <p className="text-gray-700 leading-relaxed">
-            Design and build a unified system that allows stakeholders to:
-            view all compliance requirements, track implementation progress,
-            and identify coverage gaps across Microsoft products.
+          <p className="text-slate-700 leading-relaxed">
+            Design and build a centralized platform where stakeholders could
+            manage compliance requirements, monitor implementation progress,
+            review changes, and identify coverage gaps across Microsoft
+            products.
           </p>
 
         </section>
@@ -86,52 +95,115 @@ export default function Compliance() {
         {/* MY ROLE */}
         <section className="mb-16">
 
-          <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
             My Role
           </h2>
 
-          <p className="text-gray-700 leading-relaxed">
-            I worked as a software engineer designing both the backend
-            data model and frontend dashboard experience. I collaborated
-            with stakeholders across multiple teams to define requirements,
-            structure the compliance schema, and design the UX for navigating
-            complex regulatory data.
+          <p className="text-slate-700 leading-relaxed">
+            I owned the project end-to-end, from backend architecture to
+            frontend experience. I worked with stakeholders to define
+            requirements, designed the SQL data model, built backend services
+            in C#, developed the React dashboard, and implemented workflow
+            logic supporting the full lifecycle of compliance requirements.
           </p>
+
+        </section>
+
+        {/* BUILDING THE PLATFORM */}
+        <section className="mb-16">
+
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
+            Building the Platform
+          </h2>
+
+          <div className="space-y-4 text-slate-700 leading-relaxed">
+
+            <p>
+              The platform was built from scratch to replace a manual
+              compliance process with a centralized system covering the
+              entire regulatory workflow.
+            </p>
+
+            <p>
+              I designed the SQL schema used to store controls,
+              implementation details, ownership information, approval
+              status, version history, and supporting metadata.
+            </p>
+
+            <p>
+              I then built the frontend experience in React and TypeScript,
+              creating dashboards and workflows that allowed users to
+              manage, review, and track compliance requirements from a
+              single location.
+            </p>
+
+          </div>
 
         </section>
 
         {/* WHAT I BUILT */}
         <section className="mb-16">
 
-          <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
             What I Built
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-4 text-gray-700">
+          <div className="grid md:grid-cols-2 gap-4 text-slate-700">
 
-            <div className="p-4 border rounded-xl">
-              Centralized compliance database (2,000+ requirements)
+            <div className="p-4 border border-slate-200 rounded-xl bg-white/70 backdrop-blur-sm hover:bg-white hover:border-indigo-300 transition-all duration-300">
+              Centralized database managing 2,000+ compliance requirements
             </div>
 
-            <div className="p-4 border rounded-xl">
-              Dashboard to track implementation progress across teams
+            <div className="p-4 border border-slate-200 rounded-xl bg-white/70 backdrop-blur-sm hover:bg-white hover:border-indigo-300 transition-all duration-300">
+              React dashboard for monitoring implementation progress
             </div>
 
-            <div className="p-4 border rounded-xl">
-              Search + filtering system for regulatory requirements
+            <div className="p-4 border border-slate-200 rounded-xl bg-white/70 backdrop-blur-sm hover:bg-white hover:border-indigo-300 transition-all duration-300">
+              Search and filtering across large regulatory datasets
             </div>
 
-            <div className="p-4 border rounded-xl">
-              Coverage gap identification for product teams
+            <div className="p-4 border border-slate-200 rounded-xl bg-white/70 backdrop-blur-sm hover:bg-white hover:border-indigo-300 transition-all duration-300">
+              Approval workflows for reviewing and updating controls
             </div>
 
-            <div className="p-4 border rounded-xl">
-              Role-based views for stakeholders
+            <div className="p-4 border border-slate-200 rounded-xl bg-white/70 backdrop-blur-sm hover:bg-white hover:border-indigo-300 transition-all duration-300">
+              Version history and audit tracking
             </div>
 
-            <div className="p-4 border rounded-xl">
-              React + FluentUI enterprise dashboard UI
+            <div className="p-4 border border-slate-200 rounded-xl bg-white/70 backdrop-blur-sm hover:bg-white hover:border-indigo-300 transition-all duration-300">
+              Excel-to-SQL ingestion pipeline for legacy compliance data
             </div>
+
+          </div>
+
+        </section>
+
+        {/* WORKFLOW DESIGN */}
+        <section className="mb-16">
+
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
+            Workflow Design
+          </h2>
+
+          <div className="space-y-4 text-slate-700 leading-relaxed">
+
+            <p>
+              A major challenge was simplifying how compliance requirements
+              moved through review and approval.
+            </p>
+
+            <p>
+              Controls could exist in draft, active, or in-review states.
+              Users could create new controls, edit existing requirements,
+              submit changes for review, request deletions, and track
+              approval progress through a structured workflow.
+            </p>
+
+            <p>
+              Records were automatically locked while under review,
+              ensuring data consistency and creating a clear audit trail
+              for every change.
+            </p>
 
           </div>
 
@@ -140,25 +212,28 @@ export default function Compliance() {
         {/* SYSTEM DESIGN */}
         <section className="mb-16">
 
-          <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
             System Design
           </h2>
 
-          <div className="space-y-4 text-gray-700 leading-relaxed">
+          <div className="space-y-4 text-slate-700 leading-relaxed">
 
             <p>
-              I designed a relational data model in SQL to map regulatory requirements
-              to products, features, and implementation status across teams.
+              One of the largest technical challenges was structuring a
+              complex regulatory dataset in a way that could scale while
+              remaining easy to navigate.
             </p>
 
             <p>
-              Each requirement was structured with metadata including ownership,
-              status, region applicability, and validation state.
+              I designed a relational SQL schema connecting compliance
+              controls, implementation details, ownership information,
+              approval states, and version history.
             </p>
 
             <p>
-              This allowed the frontend dashboard to dynamically surface gaps
-              and provide actionable insights instead of static documentation.
+              To migrate existing data, I built a one-time ingestion
+              process using PowerShell and SQL scripts that transformed
+              a large legacy Excel dataset into normalized database tables.
             </p>
 
           </div>
@@ -168,46 +243,70 @@ export default function Compliance() {
         {/* IMPACT */}
         <section className="mb-16">
 
-          <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
             Impact
           </h2>
 
-          <div className="space-y-3 text-gray-700 leading-relaxed">
+          <div className="space-y-3 text-slate-700 leading-relaxed">
 
             <p>
-              Reduced compliance review time by <span className="font-medium">50%</span>.
+              Reduced compliance review time by{" "}
+              <span className="font-medium">50%</span>.
             </p>
 
             <p>
-              Eliminated approximately <span className="font-medium">20 hours per week</span>
-              of manual tracking effort.
+              Eliminated approximately{" "}
+              <span className="font-medium">20 hours per week</span> of
+              manual tracking effort.
             </p>
 
             <p>
-              Accelerated time-to-market for compliant features by up to
-              <span className="font-medium"> 6 weeks</span>.
+              Accelerated time-to-market for compliant solutions by up to{" "}
+              <span className="font-medium">6 weeks</span>.
             </p>
 
           </div>
 
         </section>
 
-        {/* OPTIONAL IMAGE */}
-        <section className="mb-16">
+        {/* INTERFACE */}
+        <section>
 
-          <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
             Interface
           </h2>
 
-          <div className="border rounded-2xl overflow-hidden bg-gray-50">
+          <div className="space-y-6">
 
-            <Image
-              src="/compliance.png"
-              alt="Compliance Dashboard UI"
-              width={1200}
-              height={800}
-              className="w-full h-auto"
-            />
+            <div className="border border-slate-200 rounded-2xl overflow-hidden bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Image
+                src="/c1.jpg"
+                alt="Compliance Dashboard"
+                width={1200}
+                height={800}
+                className="w-full h-auto"
+              />
+            </div>
+
+            <div className="border border-slate-200 rounded-2xl overflow-hidden bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Image
+                src="/c2.jpg"
+                alt="Compliance Workflow"
+                width={1200}
+                height={800}
+                className="w-full h-auto"
+              />
+            </div>
+
+            <div className="border border-slate-200 rounded-2xl overflow-hidden bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Image
+                src="/c3.jpg"
+                alt="Compliance Management"
+                width={1200}
+                height={800}
+                className="w-full h-auto"
+              />
+            </div>
 
           </div>
 

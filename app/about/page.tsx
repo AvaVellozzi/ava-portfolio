@@ -2,20 +2,29 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <main className="min-h-screen bg-white text-gray-900">
+    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 text-gray-900 relative overflow-hidden">
+      {/* Animated gradient blobs */}
+      <div className="absolute top-10 right-10 w-80 h-80 bg-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-pulse" />
+      <div className="absolute bottom-20 left-20 w-80 h-80 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-pulse" />
+      <div className="absolute top-1/2 left-1/3 w-80 h-80 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-10" />
 
-      <div className="max-w-4xl mx-auto px-6 py-24">
+      <div className="max-w-4xl mx-auto px-8 py-24 relative z-10">
 
         {/* HERO */}
         <section className="mb-20">
 
-          <h1 className="text-5xl font-semibold tracking-tight mb-10">
+          <h1 className="text-6xl font-bold tracking-tighter mb-6 bg-gradient-to-r from-slate-900 to-indigo-700 bg-clip-text text-transparent">
             About
           </h1>
 
-          <div className="grid md:grid-cols-[160px_1fr] gap-10 items-start">
+          {/* Accent line */}
+          <div className="flex mb-12">
+            <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full" />
+          </div>
 
-            <div className="w-40 h-40 rounded-2xl overflow-hidden border border-gray-200 relative">
+          <div className="grid md:grid-cols-[320px_1fr] gap-10 items-start">
+
+            <div className="w-80 h-80 rounded-2xl overflow-hidden border-2 border-slate-300 relative shadow-lg hover:shadow-xl transition-shadow duration-300">
               <Image
                 src="/headshot.jpeg"
                 alt="Ava"
@@ -24,9 +33,9 @@ export default function About() {
               />
             </div>
 
-            <div className="space-y-6 text-gray-700 leading-relaxed">
+            <div className="space-y-6 text-slate-700 leading-relaxed">
 
-              <p className="text-lg text-gray-900">
+              <p className="text-lg text-slate-900 font-light">
                 Hi! I'm Ava, a recent graduate of the University of Florida with a Bachelor of Science in Computer Science. I was also part of the Honors Program and University Research Scholars Program.
               </p>
 
@@ -38,22 +47,12 @@ export default function About() {
                 and how to make complex systems simpler and more intuitive.
               </p>
 
-              <p>
-                Most of my experience has been in developer tools and internal
-                systems. Over time, I’ve realized the hard part usually isn’t
-                building features, it’s making them actually make sense to the
-                people using them. I like working in that space because I care
-                about tangible impact, and design is where I feel that most
-                directly. My engineering background helps too, because it lets
-                me understand what’s feasible and design with that in mind.
-              </p>
-
             </div>
           </div>
         </section>
 
         {/* DIVIDER */}
-        <div className="h-px bg-gray-100 mb-20" />
+        <div className="h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent mb-20" />
 
         {/* PERSONAL SECTION */}
         <section className="mb-20">
@@ -61,12 +60,12 @@ export default function About() {
           <div className="grid md:grid-cols-[160px_1fr] gap-10 items-start">
 
             <div>
-              <h2 className="text-xs tracking-[0.35em] uppercase text-gray-400">
+              <h2 className="text-xs tracking-[0.35em] uppercase text-slate-500 font-semibold">
                 Outside of tech
               </h2>
             </div>
 
-            <div className="space-y-6 text-gray-700 leading-relaxed">
+            <div className="space-y-6 text-slate-700 leading-relaxed">
 
               <p>
                 Outside of tech, I’ve always needed something physical or
@@ -91,18 +90,18 @@ export default function About() {
         </section>
 
         {/* DIVIDER */}
-        <div className="h-px bg-gray-100 mb-20" />
+        <div className="h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent mb-20" />
 
         {/* WHAT I CARE ABOUT */}
         <section>
 
           <div className="grid md:grid-cols-[160px_1fr] gap-10 items-start">
 
-            <h2 className="text-xs tracking-[0.35em] uppercase text-gray-400">
+            <h2 className="text-xs tracking-[0.35em] uppercase text-slate-500 font-semibold">
               What I care about
             </h2>
 
-            <div className="space-y-4 text-gray-700">
+            <div className="space-y-4 text-slate-700">
 
               <p>Figuring out why something feels confusing, not just fixing where it breaks</p>
 
