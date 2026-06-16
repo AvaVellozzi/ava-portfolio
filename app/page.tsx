@@ -2,46 +2,75 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="max-w-5xl mx-auto p-10">
+    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 text-gray-900">
 
-      <h1 className="text-6xl font-bold mb-4">
-        Ava Vellozzi
-      </h1>
+      <div className="max-w-5xl mx-auto px-6 py-20">
 
-      <p className="text-xl mb-10">
-        Product Designer & Computer Scientist
-      </p>
+        {/* HERO */}
+        <section className="mb-24">
+          <h1 className="text-6xl font-semibold tracking-tight mb-6">
+            Ava Vellozzi
+          </h1>
 
-      <h2 className="text-3xl font-bold mb-6">
-        Selected Work
-      </h2>
+          <p className="text-xl text-gray-600 max-w-2xl leading-relaxed">
+            Product Designer & Computer Scientist focused on designing
+            complex systems that transform technical workflows into
+            clear, intuitive experiences.
+          </p>
 
-      <div className="grid md:grid-cols-2 gap-6">
+          {/* CTA ROW */}
+          <div className="mt-8 flex gap-6 text-sm text-gray-500">
+            <a
+              href="/AvaVellozziResume.pdf"
+              target="_blank"
+              className="px-4 py-2 rounded-full border border-gray-300 hover:border-gray-500 transition"
+            >
+              View Resume
+            </a>
+          </div>
+        </section>
 
-        <ProjectCard
-          title="Microsoft Compliance Dashboard"
-          link="/projects/compliance"
-        />
+        {/* SECTION LABEL */}
+        <section className="mb-6">
+          <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400">
+            Selected Work
+          </h2>
+        </section>
 
-        <ProjectCard
-          title="Teams Diagnostic App"
-          link="/projects/teams"
-        />
+        {/* PROJECTS */}
+        <section className="space-y-3">
 
-        <ProjectCard
-          title="Epic Hire Vision Pro"
-          link="/projects/epic-hire"
-        />
+          <ProjectCard
+            title="Microsoft Compliance Dashboard"
+            description="Reduced compliance review time by 50% across 2,000+ regulatory requirements."
+            link="/projects/compliance"
+          />
 
-        <ProjectCard
-          title="LabSpec Dashboard"
-          link="/projects/labspec"
-        />
+          <ProjectCard
+            title="Teams Diagnostic App"
+            description="Enabled 10,000+ developers to debug 50+ APIs through a real-time diagnostic workflow."
+            link="/projects/teams"
+          />
 
-        <ProjectCard
-          title="Digital Worlds Education Games"
-          link="/projects/digital-worlds"
-        />
+          <ProjectCard
+            title="Epic Hire — Vision Pro Recruiting"
+            description="Designed spatial recruiting workflows improving recruiter efficiency by 45%."
+            link="/projects/epic-hire"
+          />
+
+          <ProjectCard
+            title="LabSpec Dashboard"
+            description="Built a full-stack LIMS system for specimen tracking and lab operations."
+            link="/projects/labspec"
+          />
+
+          <ProjectCard
+            title="Digital Worlds Education Games"
+            description="Built educational games reaching 8M+ users to improve early literacy outcomes."
+            link="/projects/digital-worlds"
+          />
+
+        </section>
 
       </div>
 
@@ -49,19 +78,34 @@ export default function Home() {
   );
 }
 
+/* PREMIUM CARD */
 function ProjectCard({
   title,
+  description,
   link,
 }: {
   title: string;
+  description: string;
   link: string;
 }) {
   return (
     <Link href={link}>
-      <div className="border rounded-xl p-6 hover:shadow-lg transition">
-        <h3 className="font-bold">
-          {title}
-        </h3>
+      <div className="group relative overflow-hidden rounded-2xl border border-gray-200 bg-white px-7 py-6 transition hover:border-gray-300 hover:shadow-sm">
+
+        {/* subtle hover glow */}
+        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-gradient-to-r from-gray-50 to-transparent" />
+
+        <div className="relative">
+
+          <h3 className="text-lg font-medium text-gray-900 group-hover:translate-x-0.5 transition">
+            {title}
+          </h3>
+
+          <p className="mt-1 text-sm text-gray-600 leading-relaxed">
+            {description}
+          </p>
+
+        </div>
       </div>
     </Link>
   );
