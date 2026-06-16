@@ -51,9 +51,9 @@ export default function Home() {
 
         {/* PROJECTS */}
         <section className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <ProjectCard
+         <ProjectCard
             title="Microsoft Compliance Dashboard"
-            description="Streamlined regulatory compliance workflows by centralizing 2,000+ requirements, reducing review time by 50%."
+            description="Designed and built a compliance platform that made 2,000+ regulatory requirements searchable, trackable, and actionable."
             link="/projects/compliance"
           />
 

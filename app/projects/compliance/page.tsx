@@ -300,6 +300,16 @@ export default function Compliance() {
 
             <div className="border border-slate-200 rounded-2xl overflow-hidden bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow duration-300">
               <Image
+                src="/c4.jpg"
+                alt="Compliance Management"
+                width={1200}
+                height={800}
+                className="w-full h-auto"
+              />
+            </div>
+
+            <div className="border border-slate-200 rounded-2xl overflow-hidden bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Image
                 src="/c3.jpg"
                 alt="Compliance Management"
                 width={1200}
