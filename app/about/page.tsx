@@ -2,120 +2,118 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 text-gray-900">
+    <main className="min-h-screen bg-white text-gray-900">
 
       <div className="max-w-4xl mx-auto px-6 py-24">
 
-        {/* HEADER */}
+        {/* HERO */}
         <section className="mb-20">
 
-          <h1 className="text-5xl md:text-6xl font-semibold tracking-tight mb-12">
+          <h1 className="text-5xl font-semibold tracking-tight mb-10">
             About
           </h1>
 
-          <div className="flex flex-col md:flex-row gap-12 items-start">
+          <div className="grid md:grid-cols-[160px_1fr] gap-10 items-start">
 
-            {/* HEADSHOT */}
-            <div className="shrink-0">
-              <div className="w-44 h-44 rounded-2xl overflow-hidden border border-gray-200 bg-gray-100 shadow-sm relative">
-                <Image
-                  src="/headshot.jpeg"
-                  alt="Ava Vellozzi"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+            <div className="w-40 h-40 rounded-2xl overflow-hidden border border-gray-200 relative">
+              <Image
+                src="/headshot.jpeg"
+                alt="Ava"
+                fill
+                className="object-cover"
+              />
             </div>
 
-            {/* TEXT */}
-            <div className="space-y-6 text-gray-600 leading-relaxed">
+            <div className="space-y-6 text-gray-700 leading-relaxed">
 
-              <p className="text-xl text-gray-900 leading-relaxed">
-                I’m Ava, a Computer Science student at the University of Florida
-                focused on building and designing complex software systems.
+              <p className="text-lg text-gray-900">
+                Hi! I'm Ava, a recent graduate of the University of Florida with a Bachelor of Science in Computer Science. I was also part of the Honors Program and University Research Scholars Program.
               </p>
 
               <p>
-                My work sits at the intersection of product design, engineering,
-                and systems thinking — with a focus on developer tools,
-                enterprise dashboards, and data-heavy interfaces.
+                Despite my engineering background, I’ve always been
+                drawn more to how things feel to use. In internships and
+                projects, I naturally focus on the user experience,
+                what people are trying to accomplish, where friction shows up,
+                and how to make complex systems simpler and more intuitive.
               </p>
 
               <p>
-                I enjoy turning ambiguous technical problems into structured,
-                intuitive experiences that help users move faster and understand
-                complexity with clarity.
+                Most of my experience has been in developer tools and internal
+                systems. Over time, I’ve realized the hard part usually isn’t
+                building features, it’s making them actually make sense to the
+                people using them. I like working in that space because I care
+                about tangible impact, and design is where I feel that most
+                directly. My engineering background helps too, because it lets
+                me understand what’s feasible and design with that in mind.
               </p>
 
             </div>
-
           </div>
         </section>
 
-        {/* EXPERIENCE */}
+        {/* DIVIDER */}
+        <div className="h-px bg-gray-100 mb-20" />
+
+        {/* PERSONAL SECTION */}
         <section className="mb-20">
 
-          <h2 className="text-xs tracking-[0.35em] uppercase text-gray-400 mb-8">
-            Experience
-          </h2>
-
-          <div className="space-y-5 text-gray-700">
+          <div className="grid md:grid-cols-[160px_1fr] gap-10 items-start">
 
             <div>
-              <p className="font-medium text-gray-900">Microsoft</p>
-              <p className="text-gray-500 text-sm">
-                Software Engineer Intern
-              </p>
+              <h2 className="text-xs tracking-[0.35em] uppercase text-gray-400">
+                Outside of tech
+              </h2>
             </div>
 
-            <div>
-              <p className="font-medium text-gray-900">Microsoft</p>
-              <p className="text-gray-500 text-sm">
-                Explore Intern (Product + Engineering)
-              </p>
-            </div>
+            <div className="space-y-6 text-gray-700 leading-relaxed">
 
-            <div>
-              <p className="font-medium text-gray-900">Digital Worlds Institute</p>
-              <p className="text-gray-500 text-sm">
-                Research Assistant • 8M+ users reached
+              <p>
+                Outside of tech, I’ve always needed something physical or
+                creative to balance things out. I did tap dance and choreography
+                for several years, and it ended up teaching me a lot about timing,
+                repetition, and paying attention to small details that most people
+                don’t notice at first. A lot of choreography is just iteration, trying
+                something, adjusting it slightly, and refining how everything fits together
+                until it feels right.
               </p>
-            </div>
 
-            <div>
-              <p className="font-medium text-gray-900">Product Space</p>
-              <p className="text-gray-500 text-sm">
-                President • Growth +53%
+              <p>
+                I didn’t think about it this way when I was doing it, but looking
+                back, that mindset shows up in how I approach design. I tend to think
+                in patterns and flows rather than isolated features, and I care a lot
+                about how small interactions add up to the overall experience.
               </p>
-            </div>
 
+            </div>
           </div>
 
         </section>
+
+        {/* DIVIDER */}
+        <div className="h-px bg-gray-100 mb-20" />
 
         {/* WHAT I CARE ABOUT */}
         <section>
 
-          <h2 className="text-xs tracking-[0.35em] uppercase text-gray-400 mb-8">
-            What I Care About
-          </h2>
+          <div className="grid md:grid-cols-[160px_1fr] gap-10 items-start">
 
-          <div className="grid md:grid-cols-2 gap-4 text-gray-600">
+            <h2 className="text-xs tracking-[0.35em] uppercase text-gray-400">
+              What I care about
+            </h2>
 
-            <div className="p-4 rounded-xl bg-white border border-gray-100">
-              Designing systems that make complexity understandable
-            </div>
+            <div className="space-y-4 text-gray-700">
 
-            <div className="p-4 rounded-xl bg-white border border-gray-100">
-              Developer tools and infrastructure UX
-            </div>
+              <p>Figuring out why something feels confusing, not just fixing where it breaks</p>
 
-            <div className="p-4 rounded-xl bg-white border border-gray-100">
-              Data visualization and dashboards
-            </div>
+              <p>Building tools that help people get unstuck faster, especially in technical workflows</p>
 
-            <div className="p-4 rounded-xl bg-white border border-gray-100">
-              Bridging engineering, product, and design
+              <p>Designing from real feedback, not assumptions about how users “should” behave</p>
+
+              <p>Paying attention to small interaction details, because that’s usually where the experience succeeds or fails</p>
+
+              <p>Working across product, design, and engineering without treating them like separate worlds</p>
+
             </div>
 
           </div>
@@ -123,7 +121,6 @@ export default function About() {
         </section>
 
       </div>
-
     </main>
   );
 }
