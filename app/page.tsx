@@ -53,31 +53,31 @@ export default function Home() {
         <section className="grid grid-cols-1 sm:grid-cols-2 gap-8">
          <ProjectCard
             title="Microsoft Compliance Dashboard"
-            description="Designed and built a compliance platform that made 2,000+ regulatory requirements searchable, trackable, and actionable."
+            description="A centralized compliance platform for managing 2,000+ regulatory requirements, implementation workflows, and review processes."
             link="/projects/compliance"
           />
 
           <ProjectCard
             title="Microsoft Teams Diagnostic App"
-            description="Enabled 10,000+ developers to debug 50+ APIs through a real-time diagnostic workflow."
+            description="A developer diagnostic tool for testing, debugging, and monitoring 50+ APIs used to build Microsoft Teams applications."
             link="/projects/teams"
           />
 
          <ProjectCard
             title="Epic Hire — Apple Vision Pro Recruiting"
-            description="Designed a spatial recruiting platform for Apple Vision Pro that reimagines candidate discovery, evaluation, and hiring workflows."
+            description="A spatial recruiting platform for Apple Vision Pro that transforms candidate discovery, evaluation, and hiring workflows."
             link="/projects/epic-hire"
           />
 
           <ProjectCard
             title="LabSpec Dashboard"
-            description="Built a full-stack LIMS system for specimen tracking and lab operations."
+            description="A full-stack Laboratory Information Management System (LIMS) designed to streamline specimen tracking and lab operations."
             link="/projects/labspec"
           />
 
           <ProjectCard
             title="Digital Worlds Education Games"
-            description="Built educational games reaching 8M+ users to improve early literacy outcomes."
+            description="A suite of educational literacy games designed to improve vocabulary retention and engagement for K–12 learners."
             link="/projects/digital-worlds"
           />
         </section>
