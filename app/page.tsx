@@ -2,44 +2,42 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 text-gray-900">
+    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 text-gray-900 flex flex-col items-center">
 
-      <div className="max-w-5xl mx-auto px-6 py-20">
+      <div className="max-w-6xl mx-auto px-8 py-20">
 
         {/* HERO */}
-        <section className="mb-24">
-          <h1 className="text-6xl font-semibold tracking-tight mb-6">
+        <section className="text-center mb-24">
+          <h1 className="text-7xl font-bold tracking-tight mb-6 text-gray-800">
             Ava Vellozzi
           </h1>
 
-          <p className="text-xl text-gray-600 max-w-2xl leading-relaxed">
-            Product Designer & Computer Scientist focused on designing
-            complex systems that transform technical workflows into
-            clear, intuitive experiences.
+          <p className="text-xl text-gray-500 max-w-3xl mx-auto leading-relaxed">
+            Product Designer & Computer Scientist focused on designing complex systems that transform technical workflows into clear, intuitive experiences.
           </p>
 
           {/* CTA ROW */}
-          <div className="mt-8 flex gap-6 text-sm text-gray-500">
+          <div className="mt-6 flex justify-center gap-6"> {/* Reduced from mt-8 to mt-6 */}
             <a
               href="/AvaVellozziResume.pdf"
               target="_blank"
-              className="px-4 py-2 rounded-full border border-gray-300 hover:border-gray-500 transition"
+              className="px-6 py-3 rounded-full border border-gray-300 hover:border-gray-500 bg-blue-500 text-white transition transform hover:scale-105"
             >
               View Resume
             </a>
           </div>
+
         </section>
 
         {/* SECTION LABEL */}
-        <section className="mb-6">
+        <section className="mb-6 text-center">
           <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400">
             Selected Work
           </h2>
         </section>
 
         {/* PROJECTS */}
-        <section className="space-y-3">
-
+        <section className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <ProjectCard
             title="Microsoft Compliance Dashboard"
             description="Reduced compliance review time by 50% across 2,000+ regulatory requirements."
@@ -69,11 +67,10 @@ export default function Home() {
             description="Built educational games reaching 8M+ users to improve early literacy outcomes."
             link="/projects/digital-worlds"
           />
-
         </section>
 
       </div>
-
+      
     </main>
   );
 }
@@ -90,21 +87,18 @@ function ProjectCard({
 }) {
   return (
     <Link href={link}>
-      <div className="group relative overflow-hidden rounded-2xl border border-gray-200 bg-white px-7 py-6 transition hover:border-gray-300 hover:shadow-sm">
+      <div className="group relative overflow-hidden rounded-3xl border border-gray-300 bg-white px-6 py-4 transition hover:border-blue-400 hover:shadow-lg">
 
         {/* subtle hover glow */}
-        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-gradient-to-r from-gray-50 to-transparent" />
+        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-gradient-to-r from-blue-100 to-transparent" />
 
         <div className="relative">
-
-          <h3 className="text-lg font-medium text-gray-900 group-hover:translate-x-0.5 transition">
+          <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-500 transition duration-300">
             {title}
           </h3>
-
-          <p className="mt-1 text-sm text-gray-600 leading-relaxed">
+          <p className="mt-1 text-sm text-gray-700 leading-snug">
             {description}
           </p>
-
         </div>
       </div>
     </Link>
