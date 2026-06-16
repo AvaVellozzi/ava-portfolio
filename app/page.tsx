@@ -11,7 +11,7 @@ export default function Home() {
       <div className="max-w-6xl mx-auto px-8 py-24">
 
         {/* HERO */}
-        <section className="text-center mb-32">
+        <section className="text-center mb-16">
           {/* Name with gradient */}
           <h1 className="text-8xl font-bold tracking-tighter mb-4 bg-gradient-to-r from-slate-900 to-indigo-700 bg-clip-text text-transparent">
             Ava Vellozzi
@@ -63,9 +63,9 @@ export default function Home() {
             link="/projects/teams"
           />
 
-          <ProjectCard
+         <ProjectCard
             title="Epic Hire — Apple Vision Pro Recruiting"
-            description="Designed spatial recruiting workflows improving recruiter efficiency by 45%."
+            description="Designed a spatial recruiting platform for Apple Vision Pro that reimagines candidate discovery, evaluation, and hiring workflows."
             link="/projects/epic-hire"
           />
 
