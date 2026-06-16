@@ -2,25 +2,28 @@ import Image from "next/image";
 
 export default function EpicHire() {
   return (
-    <main className="min-h-screen bg-white text-gray-900">
+    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 text-gray-900 relative overflow-hidden">
+      {/* Animated gradient blobs */}
+      <div className="absolute top-10 right-10 w-80 h-80 bg-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-pulse" />
+      <div className="absolute bottom-20 left-20 w-80 h-80 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-pulse" />
+      <div className="absolute top-1/2 left-1/3 w-80 h-80 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-10" />
 
-      <div className="max-w-4xl mx-auto px-6 py-20">
+      <div className="max-w-4xl mx-auto px-8 py-24 relative z-10">
 
         {/* HEADER */}
         <header className="mb-16">
 
-          <h1 className="text-5xl font-semibold tracking-tight mb-4">
+          <h1 className="text-6xl font-bold tracking-tighter mb-4 bg-gradient-to-r from-slate-900 to-indigo-700 bg-clip-text text-transparent">
             Epic Hire — Vision Pro Recruiting
           </h1>
 
-          <p className="text-xl text-gray-600 leading-relaxed">
-            A spatial recruiting platform designed for Apple Vision Pro that
-            reimagines how recruiters explore candidates and manage hiring workflows
-            in immersive environments.
+          <p className="text-lg text-slate-600 leading-relaxed">
+            Reimagining candidate discovery and hiring collaboration through
+            spatial computing on Apple Vision Pro.
           </p>
 
-          <div className="mt-6 text-sm text-gray-500">
-            Figma • Product Design • Spatial UX • Prototyping
+          <div className="mt-6 text-sm text-slate-500">
+            Figma • Product Design • Spatial UX • User Research • Prototyping
           </div>
 
         </header>
@@ -28,15 +31,16 @@ export default function EpicHire() {
         {/* OVERVIEW */}
         <section className="mb-16">
 
-          <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
             Overview
           </h2>
 
-          <p className="text-gray-700 leading-relaxed">
-            Traditional recruiting tools rely on linear, form-based interfaces that
-            limit how recruiters evaluate candidates at scale. Epic Hire explores how
-            spatial computing can transform candidate discovery into a more intuitive,
-            visual experience.
+          <p className="text-slate-700 leading-relaxed">
+            Traditional recruiting platforms rely on dashboards, spreadsheets,
+            and fragmented applicant tracking systems that make candidate
+            evaluation slow and difficult to navigate. Epic Hire explores how
+            spatial computing can transform recruiting workflows by making
+            candidate information more visual, collaborative, and intuitive.
           </p>
 
         </section>
@@ -44,22 +48,64 @@ export default function EpicHire() {
         {/* PROBLEM */}
         <section className="mb-16">
 
-          <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
             Problem
           </h2>
 
-          <div className="space-y-4 text-gray-700 leading-relaxed">
+          <div className="space-y-4 text-slate-700 leading-relaxed">
 
             <p>
-              Recruiters manage large volumes of candidates using fragmented ATS systems.
+              Existing recruiting platforms rely heavily on linear, form-based
+              interfaces that make it difficult to compare candidates and
+              understand hiring pipelines at a glance.
             </p>
 
             <p>
-              Candidate comparison is difficult due to linear list-based interfaces.
+              Recruiters often switch between multiple screens, tools, and
+              spreadsheets while evaluating candidates, creating unnecessary
+              friction and context switching.
             </p>
 
             <p>
-              Decision-making is slow because context is distributed across multiple screens and tabs.
+              Collaboration between recruiters, hiring managers, and other
+              stakeholders is frequently fragmented across separate systems,
+              slowing down decision making.
+            </p>
+
+          </div>
+
+        </section>
+
+        {/* RESEARCH */}
+        <section className="mb-16">
+
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
+            Research Insights
+          </h2>
+
+          <div className="space-y-4 text-slate-700 leading-relaxed">
+
+            <p>
+              Through user research and industry analysis, I identified several
+              recurring challenges across recruiting workflows.
+            </p>
+
+            <p>
+              Recruiters need faster ways to source and evaluate candidates
+              using data-driven insights instead of relying on manual review
+              processes and disconnected tools.
+            </p>
+
+            <p>
+              Hiring teams need collaborative environments that allow
+              stakeholders to review candidates, share feedback, and make
+              decisions together without logistical delays.
+            </p>
+
+            <p>
+              Candidates increasingly expect personalized experiences,
+              meaningful communication, and stronger alignment between their
+              goals and potential opportunities.
             </p>
 
           </div>
@@ -69,29 +115,32 @@ export default function EpicHire() {
         {/* GOAL */}
         <section className="mb-16">
 
-          <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
             Goal
           </h2>
 
-          <p className="text-gray-700 leading-relaxed">
-            Design a spatial recruiting experience that allows recruiters to:
-            visualize candidate data, compare profiles efficiently, and interact
-            with hiring workflows in an immersive environment.
+          <p className="text-slate-700 leading-relaxed">
+            Design a recruiting experience that leverages spatial computing to
+            help recruiters visualize candidate information, compare applicants
+            more efficiently, collaborate with hiring teams, and make faster,
+            more informed hiring decisions.
           </p>
 
         </section>
 
-        {/* MY ROLE */}
+        {/* ROLE */}
         <section className="mb-16">
 
-          <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
             My Role
           </h2>
 
-          <p className="text-gray-700 leading-relaxed">
-            I led product design for a 6-person team, defining the spatial interaction
-            model, designing high-fidelity prototypes in Figma, and shaping the end-to-end
-            candidate experience for a Vision Pro–based interface.
+          <p className="text-slate-700 leading-relaxed">
+            I led product design for a 6-person team from research through
+            high-fidelity prototyping. I conducted user research, defined
+            product requirements, mapped recruiting workflows, designed the
+            spatial interaction model, and created the end-to-end Vision Pro
+            experience in Figma.
           </p>
 
         </section>
@@ -99,62 +148,65 @@ export default function EpicHire() {
         {/* WHAT I DESIGNED */}
         <section className="mb-16">
 
-          <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
             What I Designed
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-4 text-gray-700">
+          <div className="grid md:grid-cols-2 gap-4 text-slate-700">
 
-            <div className="p-4 border rounded-xl">
-              Spatial candidate browsing interface
+            <div className="p-4 border border-slate-200 rounded-xl bg-white/70 backdrop-blur-sm hover:bg-white hover:border-indigo-300 transition-all duration-300">
+              3D candidate profiles with immersive resume exploration
             </div>
 
-            <div className="p-4 border rounded-xl">
-              Immersive job posting and filtering system
+            <div className="p-4 border border-slate-200 rounded-xl bg-white/70 backdrop-blur-sm hover:bg-white hover:border-indigo-300 transition-all duration-300">
+              Spatial candidate-job matching workflows
             </div>
 
-            <div className="p-4 border rounded-xl">
-              Candidate comparison overlays in 3D space
+            <div className="p-4 border border-slate-200 rounded-xl bg-white/70 backdrop-blur-sm hover:bg-white hover:border-indigo-300 transition-all duration-300">
+              Data visualization dashboard for recruiting insights
             </div>
 
-            <div className="p-4 border rounded-xl">
-              Recruiter workflow dashboard for spatial context
+            <div className="p-4 border border-slate-200 rounded-xl bg-white/70 backdrop-blur-sm hover:bg-white hover:border-indigo-300 transition-all duration-300">
+              Collaborative review table for hiring teams
             </div>
 
-            <div className="p-4 border rounded-xl">
-              Interaction patterns for Vision Pro UX
+            <div className="p-4 border border-slate-200 rounded-xl bg-white/70 backdrop-blur-sm hover:bg-white hover:border-indigo-300 transition-all duration-300">
+              Real-time feedback and evaluation workflows
             </div>
 
-            <div className="p-4 border rounded-xl">
-              High-fidelity Figma prototypes (5+ flows)
+            <div className="p-4 border border-slate-200 rounded-xl bg-white/70 backdrop-blur-sm hover:bg-white hover:border-indigo-300 transition-all duration-300">
+              High-fidelity Vision Pro prototypes across 5+ user flows
             </div>
 
           </div>
 
         </section>
 
-        {/* DESIGN THINKING */}
+        {/* SPATIAL DESIGN PRINCIPLES */}
         <section className="mb-16">
 
-          <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
-            Design Approach
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
+            Spatial Design Principles
           </h2>
 
-          <div className="space-y-4 text-gray-700 leading-relaxed">
+          <div className="space-y-4 text-slate-700 leading-relaxed">
 
             <p>
-              I started by mapping traditional recruiting workflows and identifying
-              friction points in candidate evaluation and comparison.
+              One of the biggest design challenges was determining what
+              information should occupy physical space and what should remain
+              contextual.
             </p>
 
             <p>
-              I then translated these workflows into spatial metaphors, focusing on how
-              proximity, layering, and grouping could represent candidate relevance.
+              I used proximity to communicate candidate relevance, grouping to
+              organize hiring workflows, and layering to reveal additional
+              information without overwhelming recruiters.
             </p>
 
             <p>
-              The design prioritized reducing cognitive load by replacing tab-based navigation
-              with spatial clustering of information.
+              The goal was not simply to make recruiting three-dimensional, but
+              to use spatial computing to reduce cognitive load and make complex
+              hiring decisions easier to understand.
             </p>
 
           </div>
@@ -164,22 +216,30 @@ export default function EpicHire() {
         {/* IMPACT */}
         <section className="mb-16">
 
-          <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
             Impact
           </h2>
 
-          <div className="space-y-3 text-gray-700 leading-relaxed">
+          <div className="space-y-3 text-slate-700 leading-relaxed">
 
             <p>
-              Improved recruiter efficiency in candidate-job matching by <span className="font-medium">45%</span>.
+              Improved recruiter efficiency in candidate-job matching by
+              <span className="font-medium"> 45%</span>.
             </p>
 
             <p>
-              Reduced friction in candidate comparison through spatial grouping and visual hierarchy.
+              Demonstrated how spatial computing can reduce friction in
+              candidate comparison and hiring decision-making.
             </p>
 
             <p>
-              Helped validate spatial UX patterns for recruiting workflows in emerging AR/VR environments.
+              Created a framework for applying Vision Pro interaction patterns
+              to enterprise recruiting workflows.
+            </p>
+
+            <p>
+              Led a multidisciplinary team of six through research, concept
+              development, prototyping, and final presentation.
             </p>
 
           </div>
@@ -189,27 +249,27 @@ export default function EpicHire() {
         {/* PROTOTYPE DECK */}
         <section className="mb-16">
 
-        <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
             Prototype Deck
-        </h2>
+          </h2>
 
-        <div className="border rounded-2xl overflow-hidden bg-gray-50">
+          <div className="border border-slate-200 rounded-2xl overflow-hidden bg-white/70 backdrop-blur-sm shadow-lg">
 
             <iframe
-            src="/epic-hire-deck.pdf"
-            className="w-full h-[650px]"
+              src="/epic-hire-deck.pdf"
+              className="w-full h-[650px]"
             />
 
-        </div>
+          </div>
 
-        <a
+          <a
             href="/epic-hire-deck.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-4 text-sm text-blue-600 hover:underline"
-        >
+            className="inline-block mt-4 text-sm text-indigo-600 hover:text-indigo-700 transition"
+          >
             Open full deck →
-        </a>
+          </a>
 
         </section>
 
