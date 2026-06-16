@@ -76,41 +76,6 @@ export default function EpicHire() {
 
         </section>
 
-        {/* RESEARCH */}
-        <section className="mb-16">
-
-          <h2 className="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold mb-6">
-            Research Insights
-          </h2>
-
-          <div className="space-y-4 text-slate-700 leading-relaxed">
-
-            <p>
-              Through user research and industry analysis, I identified several
-              recurring challenges across recruiting workflows.
-            </p>
-
-            <p>
-              Recruiters need faster ways to source and evaluate candidates
-              using data-driven insights instead of relying on manual review
-              processes and disconnected tools.
-            </p>
-
-            <p>
-              Hiring teams need collaborative environments that allow
-              stakeholders to review candidates, share feedback, and make
-              decisions together without logistical delays.
-            </p>
-
-            <p>
-              Candidates increasingly expect personalized experiences,
-              meaningful communication, and stronger alignment between their
-              goals and potential opportunities.
-            </p>
-
-          </div>
-
-        </section>
 
         {/* GOAL */}
         <section className="mb-16">
