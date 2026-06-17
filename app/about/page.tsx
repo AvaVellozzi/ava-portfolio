@@ -3,123 +3,119 @@ import Image from "next/image";
 export default function About() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 text-gray-900 relative overflow-hidden">
-      {/* Animated gradient blobs */}
+
+      {/* Background blobs */}
       <div className="absolute top-10 right-10 w-80 h-80 bg-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-pulse" />
       <div className="absolute bottom-20 left-20 w-80 h-80 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-pulse" />
       <div className="absolute top-1/2 left-1/3 w-80 h-80 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-10" />
 
-      <div className="max-w-4xl mx-auto px-8 py-24 relative z-10">
+      <div className="max-w-5xl mx-auto px-8 py-24 relative z-10">
 
         {/* HERO */}
-        <section className="mb-20">
+        <section className="mb-4">
 
-          <h1 className="text-6xl font-bold tracking-tighter mb-6 bg-gradient-to-r from-slate-900 to-indigo-700 bg-clip-text text-transparent">
-            About
-          </h1>
+          <div className="flex flex-col items-center text-center">
 
-          {/* Accent line */}
-          <div className="flex mb-12">
-            <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full" />
-          </div>
-
-          <div className="grid md:grid-cols-[320px_1fr] gap-10 items-start">
-
-            <div className="w-80 h-80 rounded-2xl overflow-hidden border-2 border-slate-300 relative shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="relative w-56 h-56 rounded-3xl overflow-hidden border border-slate-200 shadow-xl mb-8">
               <Image
                 src="/headshot.jpeg"
-                alt="Ava"
+                alt="Ava Vellozzi"
                 fill
                 className="object-cover"
               />
             </div>
 
-            <div className="space-y-6 text-slate-700 leading-relaxed">
+            <h1 className="text-6xl font-bold tracking-tighter mb-4 bg-gradient-to-r from-slate-900 to-indigo-700 bg-clip-text text-transparent">
+              About
+            </h1>
 
-              <p className="text-lg text-slate-900 font-light">
-                Hi! I'm Ava, a recent graduate of the University of Florida with a Bachelor of Science in Computer Science. I was also part of the Honors Program and University Research Scholars Program.
-              </p>
+            <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full mb-8" />
 
-              <p>
-                Despite my engineering background, I’ve always been
-                drawn more to how things feel to use. In internships and
-                projects, I naturally focus on the user experience,
-                what people are trying to accomplish, where friction shows up,
-                and how to make complex systems simpler and more intuitive.
-              </p>
-
-            </div>
           </div>
+
         </section>
 
-        {/* DIVIDER */}
-        <div className="h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent mb-20" />
+        {/* STORY */}
+        <section className="max-w-3xl mx-auto mb-20">
 
-        {/* PERSONAL SECTION */}
-        <section className="mb-20">
+          <div className="space-y-8 text-lg text-slate-700 leading-relaxed">
 
-          <div className="grid md:grid-cols-[160px_1fr] gap-10 items-start">
+            <p>
+              Hi! I'm Ava, a recent graduate of the University of Florida with a
+              Bachelor of Science in Computer Science. I was also part of the
+              Honors Program and University Research Scholars Program.
+            </p>
 
-            <div>
-              <h2 className="text-xs tracking-[0.35em] uppercase text-slate-500 font-semibold">
-                Outside of tech
-              </h2>
-            </div>
+            <p>
+              Even though my background is in engineering, I've always been
+              drawn to the experience of using a product just as much as building it.
+            </p>
 
-            <div className="space-y-6 text-slate-700 leading-relaxed">
+            <p>
+              Across internships, research, and personal projects, I naturally
+              focused on the people behind the technology: what they're trying
+              to accomplish, where they get stuck, and how complex systems can
+              be made simpler and more intuitive.
+            </p>
 
-              <p>
-                Outside of tech, I’ve always needed something physical or
-                creative to balance things out. I did tap dance and choreography
-                for several years, and it ended up teaching me a lot about timing,
-                repetition, and paying attention to small details that most people
-                don’t notice at first. A lot of choreography is just iteration, trying
-                something, adjusting it slightly, and refining how everything fits together
-                until it feels right.
-              </p>
+            <p>
+              During my time at Microsoft, I worked closely with engineers,
+              product managers, and designers on developer-facing experiences.
+              That experience gave me a deeper appreciation for balancing user
+              needs with technical constraints and designing solutions that are
+              both useful and feasible to build.
+            </p>
 
-              <p>
-                I didn’t think about it this way when I was doing it, but looking
-                back, that mindset shows up in how I approach design. I tend to think
-                in patterns and flows rather than isolated features, and I care a lot
-                about how small interactions add up to the overall experience.
-              </p>
+            <p className="text-slate-900 font-medium">
+              Today, I'm especially interested in designing tools that help
+              people understand complex information, solve problems faster,
+              and feel more confident in their work.
+            </p>
 
-            </div>
           </div>
 
         </section>
 
         {/* DIVIDER */}
-        <div className="h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent mb-20" />
+        <div className="h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent mb-8" />
 
         {/* WHAT I CARE ABOUT */}
-        <section>
+        <section className="max-w-4xl mx-auto">
 
-          <div className="grid md:grid-cols-[160px_1fr] gap-10 items-start">
-
-            <h2 className="text-xs tracking-[0.35em] uppercase text-slate-500 font-semibold">
-              What I care about
+          <div className="mb-8">
+            <h2 className="text-sm tracking-[0.3em] uppercase text-slate-500 font-semibold">
+              What I Care About
             </h2>
+          </div>
 
-            <div className="space-y-4 text-slate-700">
+          <div className="grid gap-5">
 
-              <p>Figuring out why something feels confusing, not just fixing where it breaks</p>
-
-              <p>Building tools that help people get unstuck faster, especially in technical workflows</p>
-
-              <p>Designing from real feedback, not assumptions about how users “should” behave</p>
-
-              <p>Paying attention to small interaction details, because that’s usually where the experience succeeds or fails</p>
-
-              <p>Working across product, design, and engineering without treating them like separate worlds</p>
-
-            </div>
+            {[
+              "Turning complex technical workflows into experiences people can understand and trust",
+              "Understanding why users get stuck, not just where they get stuck",
+              "Designing from research, feedback, and real user behavior rather than assumptions",
+              "Paying attention to small interaction details because that’s often where the experience succeeds or fails",
+              "Working across product, design, and engineering without treating them as separate worlds"
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-white/60 backdrop-blur-sm border border-slate-200 rounded-2xl p-5 shadow-sm"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="mt-2 h-2 w-2 rounded-full bg-indigo-500 shrink-0" />
+                  <p className="text-slate-700 leading-relaxed">
+                    {item}
+                  </p>
+                </div>
+              </div>
+            ))}
 
           </div>
 
         </section>
 
       </div>
+
     </main>
   );
 }
