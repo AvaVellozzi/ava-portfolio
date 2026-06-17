@@ -97,7 +97,7 @@ export default function TeamsDiagnostic() {
           </h2>
 
           <p className="text-slate-600 leading-relaxed">
-            As a Software Engineering Intern at Microsoft, I contributed to the
+            I contributed to the
             design and development of the diagnostic platform, building API
             testing experiences, structured logging systems, and debugging
             workflows that improved visibility into TeamsJS API behavior.
@@ -184,7 +184,7 @@ export default function TeamsDiagnostic() {
           <div className="space-y-3 text-slate-600 leading-relaxed">
 
             <p>
-              Enabled over <span className="font-medium">10,000 developers</span>
+              Enabled over <span className="font-medium">10,000 developers </span>
               to test and troubleshoot TeamsJS APIs more efficiently.
             </p>
 

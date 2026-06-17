@@ -96,7 +96,7 @@ export default function DigitalWorlds() {
             </h2>
 
             <p className="text-slate-700 leading-relaxed">
-              I designed and developed 8 educational word games using JavaScript and Node.js,
+              I contributed to the design and development of 8 educational word games using JavaScript and Node.js,
               focusing on interaction design, gameplay mechanics, and educational effectiveness.
               I also contributed to research analyzing the impact of gamified learning on literacy outcomes.
             </p>

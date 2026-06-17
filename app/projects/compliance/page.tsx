@@ -57,7 +57,7 @@ export default function Compliance() {
           <div className="space-y-4 text-slate-700 leading-relaxed">
 
             <p>
-              Compliance requirements, known as controls, were managed through
+              Compliance requirements, known as "controls", were managed through
               a fragmented collection of spreadsheets and documents.
             </p>
 
